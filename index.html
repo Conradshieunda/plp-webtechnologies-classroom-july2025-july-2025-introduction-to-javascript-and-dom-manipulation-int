@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Fundamentals Mastery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>JavaScript Fundamentals Playground</h1>
+        <p>Explore JS concepts through interactive examples</p>
+    </header>
+
+    <main class="container">
+        <!-- Part 1: JavaScript Basics -->
+        <section class="section" id="basics">
+            <h2>🎯 Part 1: JavaScript Basics</h2>
+            <div class="demo-card">
+                <h3>User Input & Conditional Logic</h3>
+                <div class="input-group">
+                    <label for="userAge">Enter your age:</label>
+                    <input type="number" id="userAge" placeholder="Enter your age">
+                    <button onclick="checkAgeCategory()">Check Category</button>
+                </div>
+                <div id="ageResult" class="result"></div>
+                
+                <div class="input-group">
+                    <label for="userNumber">Enter a number:</label>
+                    <input type="number" id="userNumber" placeholder="Enter a number">
+                    <button onclick="checkNumberType()">Check Number Type</button>
+                </div>
+                <div id="numberResult" class="result"></div>
+            </div>
+        </section>
+
+        <!-- Part 2: JavaScript Functions -->
+        <section class="section" id="functions">
+            <h2>❤️ Part 2: JavaScript Functions</h2>
+            <div class="demo-card">
+                <h3>Function Demonstrations</h3>
+                
+                <div class="input-group">
+                    <label for="price">Price:</label>
+                    <input type="number" id="price" placeholder="Enter price" value="100">
+                    <label for="taxRate">Tax Rate (%):</label>
+                    <input type="number" id="taxRate" placeholder="Tax rate" value="10">
+                    <button onclick="calculateTotal()">Calculate Total</button>
+                </div>
+                <div id="totalResult" class="result"></div>
+
+                <div class="input-group">
+                    <label for="textInput">Enter text:</label>
+                    <input type="text" id="textInput" placeholder="Enter some text">
+                    <button onclick="formatAndDisplayText()">Format Text</button>
+                </div>
+                <div id="textResult" class="result"></div>
+            </div>
+        </section>
+
+        <!-- Part 3: JavaScript Loops -->
+        <section class="section" id="loops">
+            <h2>🔁 Part 3: JavaScript Loops</h2>
+            <div class="demo-card">
+                <h3>Loop Demonstrations</h3>
+                
+                <div class="input-group">
+                    <button onclick="generateMultiplicationTable()">Generate Multiplication Table (1-5)</button>
+                    <button onclick="processStudentGrades()">Process Student Grades</button>
+                    <button onclick="startCountdown()">Start Countdown (10 seconds)</button>
+                </div>
+                
+                <div id="multiplicationTable" class="result"></div>
+                <div id="gradesResult" class="result"></div>
+                <div id="countdownResult" class="result"></div>
+            </div>
+        </section>
+
+        <!-- Part 4: DOM Manipulation -->
+        <section class="section" id="dom">
+            <h2>🌐 Part 4: DOM Manipulation</h2>
+            <div class="demo-card">
+                <h3>Interactive DOM Examples</h3>
+                
+                <div class="dom-controls">
+                    <button id="themeToggle" onclick="toggleTheme()">🌙 Toggle Dark Mode</button>
+                    <button onclick="addNewItem()">➕ Add List Item</button>
+                    <button onclick="removeLastItem()">➖ Remove Last Item</button>
+                    <button onclick="changeHeaderText()">✏️ Change Header Text</button>
+                </div>
+
+                <div class="dynamic-content">
+                    <h4 id="dynamicHeader">Dynamic Content Area</h4>
+                    <ul id="itemList">
+                        <li>Initial item 1</li>
+                        <li>Initial item 2</li>
+                    </ul>
+                    
+                    <div class="color-box" id="colorBox">
+                        <p>Click me to change color!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>JavaScript Fundamentals Assignment - Mastering JS Concepts</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
